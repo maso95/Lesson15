@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:clipToPadding="false"
+	 android:fillViewport="true"
+	 android:padding="@dimen/defaul_space">
+
+	 <LinearLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="match_parent"
+		  android:orientation="vertical"
+		  tools:context=".ui.screens.MainActivity">
+
+		 <LinearLayout
+			 android:id="@+id/ll_top_info"
+			 android:layout_width="match_parent"
+			 android:layout_height="130dp"
+			 android:orientation="horizontal"
+			 android:padding="@dimen/defaul_space">
+
+			 <ImageView
+				 android:id="@+id/fighter_icon"
+				 android:layout_width="0dp"
+				 android:layout_height="@dimen/profile_min_height"
+				 android:layout_weight="0.4"
+				 tools:src="@drawable/ic_profile_place_holder" />
+
+			 <Space
+				 android:layout_width="0dp"
+				 android:layout_height="@dimen/defaul_space" />
+
+			 <LinearLayout
+				 android:layout_width="0dp"
+				 android:layout_height="match_parent"
+				 android:layout_weight="0.6"
+				 android:orientation="vertical">
+
+				 <TextView
+					 android:id="@+id/fighter_name"
+					 android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+					 tools:text="Hello World!" />
+
+				 <Space
+					 android:layout_width="0dp"
+					 android:layout_height="@dimen/defaul_space" />
+
+				 <TextView
+					 android:id="@+id/fighter_description"
+					 android:layout_width="wrap_content"
+					 android:layout_height="match_parent"
+					 tools:text="While using Android Gradle plugin 3.0 in your project, you might have noticed that compile keyword has been now deprecated in favour of implementation and api. Let’s understand both of them with an example.
+
+Sample application(Kotlin) can be found here.
+
+Let us assume a project with four library modules.
+
+LibraryA
+LibraryB" />
+			 </LinearLayout>
+
+		 </LinearLayout>
+
+		  <View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginBottom="@dimen/defaul_space"
+				android:layout_marginTop="@dimen/defaul_space"
+				android:background="@color/colorPrimary" />
+
+         <include
+             android:id="@+id/ll_personal_ch"
+             layout="@layout/vg_fighter_ch"
+             android:layout_width="match_parent"
+             android:layout_height="99dp" />
+
+		 <View
+			 android:layout_width="match_parent"
+			 android:layout_height="wrap_content"
+			 android:layout_marginBottom="@dimen/defaul_space"
+			 android:layout_marginTop="@dimen/defaul_space"
+			 android:background="@color/colorPrimary" />
+
+
+		 <Button
+			 android:id="@+id/btn_start_new_chalange"
+			 android:layout_width="wrap_content"
+			 android:layout_height="37dp"
+			 android:layout_gravity="center_horizontal"
+			 android:text="@string/start_new_chalange" />
+
+		  <View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginBottom="@dimen/defaul_space"
+				android:layout_marginTop="@dimen/defaul_space"
+				android:background="@color/colorPrimary" />
+
+		 <include
+			 layout="@layout/vs_window"
+			 android:layout_width="match_parent"
+			 android:layout_height="239dp" />
+
+	 </LinearLayout>
+
+</ScrollView>

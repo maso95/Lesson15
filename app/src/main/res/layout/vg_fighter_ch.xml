@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/enemy_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textSize="18sp"
+		tools:text="FighterName" />
+
+	 <LinearLayout style="@style/ch_row">
+
+		  <TextView
+				android:id="@+id/title_hp"
+				style="@style/ch_title"
+				android:text="@string/figter_hp" />
+
+		  <TextView
+				android:id="@+id/value_hp"
+				style="@style/ch_value"
+				tools:text="***" />
+	 </LinearLayout>
+
+	 <LinearLayout style="@style/ch_row">
+
+		  <TextView
+				android:id="@+id/title_armor"
+				style="@style/ch_title"
+				android:text="@string/figter_arrmor" />
+
+		  <TextView
+				android:id="@+id/value_armor"
+				style="@style/ch_value"
+				tools:text="***" />
+	 </LinearLayout>
+
+	<LinearLayout style="@style/ch_row">
+
+		<TextView
+			android:id="@+id/title_damage"
+			style="@style/ch_title"
+			android:text="@string/figter_damage" />
+
+		<TextView
+			android:id="@+id/value_damage"
+			style="@style/ch_value"
+			tools:text="***" />
+	</LinearLayout>
+
+</LinearLayout>

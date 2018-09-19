@@ -1,0 +1,10 @@
+<resources>
+	 <string name="app_name">Ui_Test</string>
+	 <string name="figter_hp">HP</string>
+	 <string name="figter_damage">Damage</string>
+	 <string name="figter_arrmor">Armor</string>
+	 <string name="start_new_chalange">Start new CHALANGE</string>
+	<string name="place_holder_dmgDone">dmgDone</string>
+	<string name="place_holder_HPleft">hpLeft</string>
+	<string name="place_holder_winner">Winner</string>
+</resources>
