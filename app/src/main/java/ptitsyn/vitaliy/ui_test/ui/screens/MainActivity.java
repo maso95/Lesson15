@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
     TextView enemyArrmor;
     TextView enemyDamage;
 
+    TextView currentWinner;
+    TextView hpLeft;
+    TextView dmgDone;
+
     TextView startnewChange;
 
 
@@ -90,6 +94,10 @@ public class MainActivity extends AppCompatActivity {
         currentArrmor = findViewById(R.id.value_armor);
         currentDamage = findViewById(R.id.value_damage);
 
+        currentWinner = findViewById(R.id.a_winner);
+        hpLeft = findViewById(R.id.hp_left);
+        dmgDone = findViewById(R.id.dmg_done);
+
         startnewChange = findViewById(R.id.btn_start_new_chalange);
         startnewChange.setOnClickListener(this::startnewFiht);
     }
@@ -115,9 +123,8 @@ public class MainActivity extends AppCompatActivity {
         enemyArrmor = findViewById(R.id.enemy_armor);
         enemyDamage = findViewById(R.id.enemy_damage);
 
-        winner.getName();
-        winner.getHealth();
-
+        currentWinner.setText(winner.getName());
+        hpLeft.setText((int)(winner.getHealth()));
 
         findViewById(R.id.vs_wind).setVisibility(View.VISIBLE);
         // TODO  inflate layout from R.
